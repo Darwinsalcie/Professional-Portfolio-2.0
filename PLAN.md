@@ -60,7 +60,7 @@ Legend per task: **Goal** · **Accept** (acceptance criteria) · **Files** · **
       (ARCHITECTURE §2.1), `base.css`; utilities `text-headline-xl`, `px-margin-xl`, `max-w-page` work.
       · Verify: gate + a utility used in App renders correctly in browser. · Commit: `feat(styles): add tailwind v4 and design tokens`
 
-- [ ] **P2-07 Theme palettes (light/dark/glass) + base layer**
+- [x] **P2-07 Theme palettes (light/dark/glass) + base layer**
       Goal: semantic colors. · Accept: `themes.css` per ARCHITECTURE §2.2–2.3 keyed on `[data-theme]`; `@theme inline`
       mapping; glass backdrop + `@supports` fallback; base: body bg/fg/font, `::selection`, `:focus-visible` ring,
       `prefers-reduced-motion` reset, `color-scheme`. · Verify: gate; manually toggle attribute in devtools for 3 palettes.
