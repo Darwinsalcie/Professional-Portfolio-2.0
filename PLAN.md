@@ -72,7 +72,7 @@ Legend per task: **Goal** · **Accept** (acceptance criteria) · **Files** · **
       palettes (4.5:1 body, 3:1 large text/UI). Fix tokens if any fail and log in DECISIONS.md.
       · Verify: gate. · Commit: `test(theme): enforce wcag aa contrast for theme tokens`
 
-- [ ] **P2-09 Fonts**
+- [x] **P2-09 Fonts**
       Goal: self-hosted fonts. · Accept: `@fontsource-variable/{epilogue,manrope,jetbrains-mono}` imported (only needed
       subsets/axes: latin + latin-ext for Spanish); `font-display: swap`; `--font-*` tokens point to them; no requests
       to Google Fonts. · Verify: gate; browser network tab shows only local woff2. · Commit: `feat(styles): self-host variable fonts`

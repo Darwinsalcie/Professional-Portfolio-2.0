@@ -1,3 +1,6 @@
+@import '@fontsource-variable/epilogue';
+@import '@fontsource-variable/manrope';
+@import '@fontsource-variable/jetbrains-mono';
 @import 'tailwindcss';
 @import './tokens.css';
 @import './themes.css';
