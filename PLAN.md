@@ -49,7 +49,7 @@ Legend per task: **Goal** · **Accept** (acceptance criteria) · **Files** · **
       coverage via v8 optional); `src/test/setup.ts`, `src/test/render.tsx` helper; smoke test renders App;
       scripts `test` (run), `test:watch`. · Verify: full gate. · Commit: `test: set up vitest and testing library`
 
-- [ ] **P2-05 Git hooks: Husky, lint-staged, commitlint**
+- [x] **P2-05 Git hooks: Husky, lint-staged, commitlint**
       Goal: enforce quality at commit. · Accept: `prepare: husky`; `pre-commit` → lint-staged (eslint --fix +
       prettier on staged); `commit-msg` → commitlint (config-conventional, header-max-length 72); verified on Windows.
       · Verify: a commit with message `bad message` is rejected; valid one passes.
