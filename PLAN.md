@@ -55,7 +55,7 @@ Legend per task: **Goal** · **Accept** (acceptance criteria) · **Files** · **
       · Verify: a commit with message `bad message` is rejected; valid one passes.
       · Commit: `build(git): enforce conventional commits and pre-commit checks`
 
-- [ ] **P2-06 Tailwind v4 + static tokens**
+- [x] **P2-06 Tailwind v4 + static tokens**
       Goal: token layer. · Accept: `@tailwindcss/vite` plugin; `src/styles/index.css` imports `tokens.css`
       (ARCHITECTURE §2.1), `base.css`; utilities `text-headline-xl`, `px-margin-xl`, `max-w-page` work.
       · Verify: gate + a utility used in App renders correctly in browser. · Commit: `feat(styles): add tailwind v4 and design tokens`

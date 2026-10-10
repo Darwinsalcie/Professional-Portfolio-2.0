@@ -1,0 +1,95 @@
+@theme {
+  /* Fonts */
+  --font-display: 'Epilogue Variable', ui-sans-serif, system-ui, sans-serif;
+  --font-body: 'Manrope Variable', ui-sans-serif, system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono Variable', ui-monospace, monospace;
+
+  /* Type scale */
+  --text-headline-xl: 4rem;
+  --text-headline-xl--line-height: 4.5rem;
+  --text-headline-xl--letter-spacing: -0.03em;
+  --text-headline-xl--font-weight: 600;
+
+  --text-headline-xl-m: 2.375rem;
+  --text-headline-xl-m--line-height: 2.75rem;
+  --text-headline-xl-m--letter-spacing: -0.025em;
+  --text-headline-xl-m--font-weight: 600;
+
+  --text-headline-lg: 2.75rem;
+  --text-headline-lg--line-height: 3.25rem;
+  --text-headline-lg--letter-spacing: -0.025em;
+  --text-headline-lg--font-weight: 600;
+
+  --text-headline-lg-m: 1.875rem;
+  --text-headline-lg-m--line-height: 2.25rem;
+  --text-headline-lg-m--letter-spacing: -0.02em;
+  --text-headline-lg-m--font-weight: 600;
+
+  --text-headline-md: 2rem;
+  --text-headline-md--line-height: 2.5rem;
+  --text-headline-md--letter-spacing: -0.02em;
+  --text-headline-md--font-weight: 500;
+
+  --text-headline-sm: 1.375rem;
+  --text-headline-sm--line-height: 1.875rem;
+  --text-headline-sm--letter-spacing: -0.015em;
+  --text-headline-sm--font-weight: 500;
+
+  --text-body-lg: 1.125rem;
+  --text-body-lg--line-height: 1.875rem;
+  --text-body-lg--letter-spacing: -0.01em;
+
+  --text-body-md: 0.9375rem;
+  --text-body-md--line-height: 1.5rem;
+  --text-body-md--letter-spacing: -0.005em;
+
+  --text-body-sm: 0.8125rem;
+  --text-body-sm--line-height: 1.25rem;
+
+  --text-label-code: 0.75rem;
+  --text-label-code--line-height: 1rem;
+  --text-label-code--letter-spacing: 0.04em;
+  --text-label-code--font-weight: 500;
+
+  --text-label-caps: 0.6875rem;
+  --text-label-caps--line-height: 0.875rem;
+  --text-label-caps--letter-spacing: 0.08em;
+  --text-label-caps--font-weight: 600;
+
+  /* Radii */
+  --radius-chip: 0.125rem;
+  --radius-nav: 0.25rem;
+  --radius-control: 0.5rem;
+  --radius-card: 1rem;
+  --radius-panel: 1.5rem;
+
+  /* Spacing */
+  --spacing-gutter: 1rem;
+  --spacing-gutter-md: 1.5rem;
+  --spacing-gutter-xl: 2.5rem;
+  --spacing-margin: 1.25rem;
+  --spacing-margin-md: 2rem;
+  --spacing-margin-xl: 4rem;
+  --spacing-section: 6rem;
+  --spacing-section-m: 4rem;
+
+  /* Layout */
+  --container-page: 90rem;
+  --breakpoint-md: 48rem;
+  --breakpoint-xl: 80rem;
+
+  /* Elevation */
+  --shadow-card: 0 20px 25px -5px rgb(0 0 0 / 0.25), 0 8px 10px -6px rgb(0 0 0 / 0.25);
+  --shadow-panel: 0 25px 50px -12px rgb(0 0 0 / 0.45);
+  --shadow-float: 0 20px 40px -15px rgb(0 0 0 / 0.8), 0 0 1px 1px rgb(255 255 255 / 0.08);
+
+  /* Motion */
+  --ease-precise: cubic-bezier(0.22, 1, 0.36, 1);
+  --duration-fast: 120ms;
+  --duration-base: 200ms;
+  --duration-slow: 400ms;
+}
+
+@utility max-w-page {
+  max-width: var(--container-page, 90rem);
+}
