@@ -82,7 +82,7 @@ Legend per task: **Goal** · **Accept** (acceptance criteria) · **Files** · **
       `theme.ts`: `isThemeChoice`, `readStoredChoice` (try/catch), `writeStoredChoice`, `resolveTheme(choice, prefersDark)`,
       `applyTheme(root, choice, resolved)`; 100% branch coverage on these. · Verify: gate. · Commit: `feat(theme): add theme resolution and persistence logic`
 
-- [ ] **P2-11 No-flash inline script**
+- [x] **P2-11 No-flash inline script**
       Goal: correct theme before first paint. · Accept: minimal inline script in `index.html` `<head>` (before CSS)
       sets `data-theme` + `data-theme-choice` + `color-scheme`; test asserts it uses the same key/values as
       `theme-constants.ts`; works with storage disabled. · Verify: gate; hard reload in each mode shows no flash

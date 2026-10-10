@@ -4,6 +4,31 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
+    <script>
+      ;(function () {
+        try {
+          var key = 'portfolio-theme'
+          var choice = localStorage.getItem(key)
+          var valid = ['light', 'dark', 'glass', 'system']
+          if (!choice || valid.indexOf(choice) === -1) {
+            choice = 'system'
+          }
+          var resolved = choice
+          if (choice === 'system') {
+            var mql = window.matchMedia('(prefers-color-scheme: dark)')
+            resolved = mql.matches ? 'dark' : 'light'
+          }
+          var doc = document.documentElement
+          doc.setAttribute('data-theme', resolved)
+          doc.setAttribute('data-theme-choice', choice)
+          doc.style.colorScheme = resolved === 'light' ? 'light' : 'dark'
+        } catch (e) {
+          document.documentElement.setAttribute('data-theme', 'dark')
+          document.documentElement.setAttribute('data-theme-choice', 'system')
+          document.documentElement.style.colorScheme = 'dark'
+        }
+      })()
+    </script>
   </head>
   <body>
     <div id="root"></div>
