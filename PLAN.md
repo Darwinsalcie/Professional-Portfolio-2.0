@@ -94,7 +94,7 @@ Legend per task: **Goal** · **Accept** (acceptance criteria) · **Files** · **
       Tests: persistence, live system switch (mocked matchMedia), storage failure. · Verify: gate.
       · Commit: `feat(theme): add theme provider with live system sync`
 
-- [ ] **P2-13 shadcn init + ThemeSwitcher**
+- [x] **P2-13 shadcn init + ThemeSwitcher**
       Goal: accessible switcher. · Accept: `pnpm dlx shadcn@latest init` (Vite + Tailwind v4 path, verify docs),
       `components.json`, `lib/cn.ts`; add `radio-group`, restyle to tokens; `ThemeSwitcher` = segmented radio group
       with visible labels, group `aria-label` from content, arrow-key navigation, visible focus. Tests: role
