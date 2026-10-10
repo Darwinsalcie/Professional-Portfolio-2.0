@@ -77,7 +77,7 @@ Legend per task: **Goal** · **Accept** (acceptance criteria) · **Files** · **
       subsets/axes: latin + latin-ext for Spanish); `font-display: swap`; `--font-*` tokens point to them; no requests
       to Google Fonts. · Verify: gate; browser network tab shows only local woff2. · Commit: `feat(styles): self-host variable fonts`
 
-- [ ] **P2-10 Theme logic (pure) + tests**
+- [x] **P2-10 Theme logic (pure) + tests**
       Goal: testable theme core. · Accept: `theme-constants.ts` (STORAGE_KEY, THEME_CHOICES, DEFAULT = system),
       `theme.ts`: `isThemeChoice`, `readStoredChoice` (try/catch), `writeStoredChoice`, `resolveTheme(choice, prefersDark)`,
       `applyTheme(root, choice, resolved)`; 100% branch coverage on these. · Verify: gate. · Commit: `feat(theme): add theme resolution and persistence logic`
