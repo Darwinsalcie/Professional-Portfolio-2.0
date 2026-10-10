@@ -88,7 +88,7 @@ Legend per task: **Goal** · **Accept** (acceptance criteria) · **Files** · **
       `theme-constants.ts`; works with storage disabled. · Verify: gate; hard reload in each mode shows no flash
       (browser check, throttled CPU). · Commit: `feat(theme): apply stored theme before first paint`
 
-- [ ] **P2-12 ThemeProvider + useTheme**
+- [x] **P2-12 ThemeProvider + useTheme**
       Goal: React API. · Accept: context with `{ choice, resolved, setChoice }`; listens to `matchMedia` changes only when
       choice is `system` (cleanup on change/unmount); updates `meta[name=theme-color]`; `useTheme` throws outside provider.
       Tests: persistence, live system switch (mocked matchMedia), storage failure. · Verify: gate.
