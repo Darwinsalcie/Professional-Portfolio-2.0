@@ -44,7 +44,7 @@ Legend per task: **Goal** · **Accept** (acceptance criteria) · **Files** · **
       scripts `lint` (`--max-warnings 0`), `lint:fix`, `format`, `format:check`. No peer-dep warnings.
       · Verify: `pnpm lint`, `pnpm format:check`. · Commit: `build(lint): add eslint flat config and prettier`
 
-- [ ] **P2-04 Vitest + Testing Library**
+- [x] **P2-04 Vitest + Testing Library**
       Goal: test runner. · Accept: vitest config (jsdom, globals off, setup file with jest-dom + vitest-axe matchers,
       coverage via v8 optional); `src/test/setup.ts`, `src/test/render.tsx` helper; smoke test renders App;
       scripts `test` (run), `test:watch`. · Verify: full gate. · Commit: `test: set up vitest and testing library`
