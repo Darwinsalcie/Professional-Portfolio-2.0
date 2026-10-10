@@ -24,7 +24,7 @@ Legend per task: **Goal** · **Accept** (acceptance criteria) · **Files** · **
   `.editorconfig`, `.nvmrc` (24); `main` has initial commit, then branch created. · Files: root dotfiles, `design/`.
   Verify: `git status` clean, `git log` shows commit. · Commit: `chore: initialize repository with plan and design references`
 
-- [ ] **P2-02 Scaffold Vite + React + TS (strict)**
+- [x] **P2-02 Scaffold Vite + React + TS (strict)**
   Goal: running app skeleton. · Accept: scaffolded with `pnpm create vite` (check `--help`, react-ts template,
   non-interactive) into a temp dir and merged in, boilerplate removed; `packageManager: "pnpm@11.9.0"`,
   `preinstall: pnpm dlx only-allow pnpm`, `engines.node >=22`; tsconfig `strict`, `noUncheckedIndexedAccess`,
