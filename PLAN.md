@@ -101,7 +101,7 @@ Legend per task: **Goal** · **Accept** (acceptance criteria) · **Files** · **
       radiogroup, arrow keys change selection, choice persisted. · Verify: gate + keyboard check in browser.
       · Commit: `feat(theme): add accessible theme switcher`
 
-- [ ] **P2-14 App shell, router, bilingual layout**
+- [x] **P2-14 App shell, router, bilingual layout**
       Goal: skeleton routes with regional language detection. · Accept: `providers.tsx` (ThemeProvider, LocaleProvider),
       `router.tsx` (`/` → `LocaleRedirect` checking stored preference, `navigator.languages` for `es-*` fallback `en`;
       `/:lang`, `/:lang/work/:slug`, `*` lazy pages), `LanguageSwitcher` (ES/EN control), `RootLayout` with `SkipLink` → `#main`,

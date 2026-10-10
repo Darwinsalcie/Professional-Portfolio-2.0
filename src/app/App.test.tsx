@@ -3,8 +3,9 @@ import { render } from '@/test/render'
 import { App } from './App'
 
 describe('App', () => {
-  it('renders the application headline', () => {
-    const { getByRole } = render(<App />)
-    expect(getByRole('heading', { level: 1 })).toHaveTextContent('Professional Portfolio 2.0')
+  it('renders the application shell and navigates to the localized home page', async () => {
+    const { findByRole } = render(<App />)
+    const heading = await findByRole('heading', { level: 1 })
+    expect(heading).toHaveTextContent(/Full-Stack/i)
   })
 })
