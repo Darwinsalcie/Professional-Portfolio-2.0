@@ -24,10 +24,12 @@ Quality bar: the code must be as professional as the site looks. The repository 
 ## Design source of truth
 
 The folder `/design/` contains:
+
 - `DESIGN.md` — the design system ("Architectural Precision"): color tokens, typography, spacing, radii, elevation, components.
 - `code.html` — a static reference export of the intended layout (Tailwind CDN + inline markup).
 
 Read both fully before planning. Rules:
+
 - **Follow the design system faithfully**: obsidian dark base, off-white light mode, ultramarine accent, hairline 1px borders, low-radius geometry, monospaced technical metadata, zero-padded mono index numbers, restraint over spectacle.
 - **Do not copy `code.html` as is.** Rebuild it as typed, reusable React components. Convert its Tailwind CDN config into real design tokens (Tailwind v4 `@theme` in CSS).
 - Replace Material Symbols icon font usage with `lucide-react` (tree-shakeable SVG icons).
@@ -52,6 +54,7 @@ Do not add state management libraries, CSS-in-JS, UI kits beyond the above, or o
 ## Required features
 
 ### Sections and pages (see `code.html` for layout)
+
 1. **Header/nav**: brand mark, section links, theme switcher, primary CTA ("Hire me"). Mobile menu with focus trap and keyboard support.
 2. **Hero**: value proposition, two CTAs, system-topology visual (SVG, no heavy assets).
 3. **Featured projects**: case-study cards driven by typed data.
@@ -63,6 +66,7 @@ Do not add state management libraries, CSS-in-JS, UI kits beyond the above, or o
 9. **Footer** with directory, direct lines, availability status.
 
 ### Theme system (4 options)
+
 - Selectable modes: **Light**, **Dark**, **Glass**, **System** (default).
 - **System** follows `prefers-color-scheme` live (listen for changes) and resolves to light or dark.
 - **Glass** is a distinct theme: frosted translucent surfaces (`backdrop-filter`), thin light borders, soft rich background. Text must stay AA-accessible. Provide a fallback when `backdrop-filter` is unsupported.
@@ -70,6 +74,7 @@ Do not add state management libraries, CSS-in-JS, UI kits beyond the above, or o
 - Implement with a `data-theme` attribute on `<html>` and CSS variables; build a typed `ThemeProvider` + `useTheme` hook. The switcher must be a proper accessible control (radio group semantics, labels, keyboard navigation).
 
 ### Non-functional requirements
+
 - **Responsive**: mobile-first, breakpoints per `DESIGN.md` (4/8/12-column grid).
 - **Accessibility**: WCAG AA contrast in all four theme modes, semantic landmarks, visible focus states, skip link, correct heading order, alt text, reduced-motion support, full keyboard navigation.
 - **Performance**: Lighthouse 95+ on Performance, Accessibility, Best Practices and SEO (mobile). Code-split routes, lazy-load below-the-fold media, no layout shift, optimized images (WebP/AVIF, explicit dimensions).
@@ -93,11 +98,11 @@ Do not add state management libraries, CSS-in-JS, UI kits beyond the above, or o
   design/           # DESIGN.md and code.html reference (do not ship)
   ```
 - No magic values: colors, spacing and type come from tokens. No inline styles except dynamic values.
-- Comments explain *why*, not *what*. Public helpers get short JSDoc.
+- Comments explain _why_, not _what_. Public helpers get short JSDoc.
 
 ## Git and commit conventions
 
-- Use **Conventional Commits**: `type(scope): imperative summary` (types: `feat`, `fix`, `docs`, `style`, `refactor`, `perf`, `test`, `build`, `ci`, `chore`). Subject line max 72 characters, no trailing period. Add a body when the *why* is not obvious. Breaking changes use `!` and a `BREAKING CHANGE:` footer.
+- Use **Conventional Commits**: `type(scope): imperative summary` (types: `feat`, `fix`, `docs`, `style`, `refactor`, `perf`, `test`, `build`, `ci`, `chore`). Subject line max 72 characters, no trailing period. Add a body when the _why_ is not obvious. Breaking changes use `!` and a `BREAKING CHANGE:` footer.
 - Examples: `feat(theme): add glass theme with system sync`, `fix(contact): prevent double submit`, `chore(deps): add react-hook-form and zod`.
 - One logical change per commit, working branch per phase (`feat/phase-2-foundation`, etc.). Never commit secrets, never force-push, never rewrite history I have not asked you to rewrite.
 - Show me the proposed commit message and the diff summary before each commit if I ask for review mode; otherwise commit after checks pass.
@@ -105,6 +110,7 @@ Do not add state management libraries, CSS-in-JS, UI kits beyond the above, or o
 ## Phases
 
 ### Phase 0 — Context and plan (no app code)
+
 1. Read `/design/DESIGN.md` and `/design/code.html`.
 2. Create **`AGENTS.md`** at the repo root (short, high-signal, under ~120 lines) containing: project purpose, approved stack and versions, commands (`pnpm dev/build/typecheck/lint/test`), the "pnpm only, never npm/npx/yarn" rule, folder structure, code and design rules from this prompt, the Conventional Commits rule, the "never invent facts" rule, and a "do not touch / ask first" list. Treat it as living: when I correct a recurring mistake, propose a one-line rule to add.
 3. Create **`PLAN.md`**: an ordered task list. Each task has an ID, a goal, acceptance criteria, files likely touched, and how to verify. Tasks must be small enough for one commit each.
@@ -112,28 +118,35 @@ Do not add state management libraries, CSS-in-JS, UI kits beyond the above, or o
 5. List open questions and risks. **Stop and wait for approval.**
 
 ### Phase 1 — Design tokens and architecture review
+
 1. Propose the final folder structure and the token mapping from `DESIGN.md` to Tailwind v4 `@theme` and CSS variables for all four themes (light, dark, glass, system-resolved).
 2. Propose the component inventory (what is reusable vs section-specific).
 3. **Stop and wait for approval.**
 
 ### Phase 2 — Foundation
+
 Scaffold Vite + React + TS, Tailwind v4, ESLint/Prettier, Vitest, Husky/lint-staged/commitlint, base layout, fonts, token CSS, `ThemeProvider` with the no-flash script, and the accessible theme switcher. Verify all four modes visually and with tests.
 
 ### Phase 3 — Sections
+
 Build header, hero, projects, services, stack, about, contact and footer, one section per commit, from typed content. Make each section responsive and accessible before moving on.
 
 ### Phase 4 — Case study page and routing
+
 Data-driven case study template and routing, with correct scroll and focus behavior on navigation.
 
 ### Phase 5 — Polish and quality gates
+
 Motion pass (subtle, reduced-motion safe), SEO assets, image optimization, Lighthouse and axe audits, fix findings, write the README (setup, scripts, architecture, how to edit content, how to deploy).
 
 ### Phase 6 — Deployment readiness
+
 Static build configuration for Vercel, Netlify or Cloudflare Pages, environment variable handling for the contact endpoint, a CI workflow running typecheck, lint, test and build on pull requests.
 
 ## Per-task loop
 
 For every task in `PLAN.md`:
+
 1. State the task and its acceptance criteria.
 2. Implement only that task.
 3. Run `pnpm typecheck && pnpm lint && pnpm test && pnpm build`.
