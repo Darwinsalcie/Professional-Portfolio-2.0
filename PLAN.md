@@ -66,7 +66,7 @@ Legend per task: **Goal** · **Accept** (acceptance criteria) · **Files** · **
       `prefers-reduced-motion` reset, `color-scheme`. · Verify: gate; manually toggle attribute in devtools for 3 palettes.
       · Commit: `feat(theme): add light, dark and glass color palettes`
 
-- [ ] **P2-08 Token contrast test**
+- [x] **P2-08 Token contrast test**
       Goal: AA guaranteed by CI. · Accept: `src/lib/contrast.ts` (luminance, alpha compositing, ratio) with unit tests;
       `theme-tokens.ts` table + test asserting it matches `themes.css`; contrast test for every fg/bg pair in all 3
       palettes (4.5:1 body, 3:1 large text/UI). Fix tokens if any fail and log in DECISIONS.md.
