@@ -109,7 +109,7 @@ Legend per task: **Goal** · **Accept** (acceptance criteria) · **Files** · **
       and verify language toggle persists and switches routes.
       · Commit: `feat(app): add router, providers and root layout with bilingual routing`
 
-- [ ] **P2-15 Content model + placeholders (es & en)**
+- [x] **P2-15 Content model + placeholders (es & en)**
       Goal: typed bilingual content layer. · Accept: `types/content.ts` (`Locale = "es" | "en"`, `Localized<T>`);
       `content/*.ts` with neutral placeholders in both Spanish and English (no invented facts) each marked `// TODO(content):`;
       `getContent(locale)`; integrity tests (slugs/ids match across locales, non-empty required fields, valid URLs/emails,
