@@ -21,6 +21,10 @@ export const uiContent: Localized<UiLabels> = {
     servicesLede:
       'Soluciones técnicas enfocadas en resolver arquitecturas complejas y entregar productos de calidad institucional.',
     consultCta: 'Consultar proyecto',
+    stackEyebrow: 'Stack Tecnológico',
+    stackTitle: 'Registro de Tecnologías',
+    stackLede:
+      'Un conjunto deliberado y probado en producción para máximo rendimiento, mantenibilidad y tipado estricto.',
   },
   en: {
     themeSwitcherAria: 'Select color theme',
@@ -43,5 +47,9 @@ export const uiContent: Localized<UiLabels> = {
     servicesLede:
       'Focused technical leadership to build high-scale architectures and deliver institutional-grade software.',
     consultCta: 'Consult on a project',
+    stackEyebrow: 'Core Stack',
+    stackTitle: 'Engineered Stack Ledger',
+    stackLede:
+      'A deliberate, production-proven toolkit selected for performance, type safety, and maintainability.',
   },
 }

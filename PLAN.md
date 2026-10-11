@@ -138,7 +138,7 @@ a render + axe test. Browser screenshot check at the end of each section task.
       2-col md / 1-col mobile. Commit: `feat(projects): add featured project cards`
 - [x] **P3-06 Services** — landing pages, web applications, full-stack/.NET; lucide icon map; benefit lists; CTA.
       Commit: `feat(services): add services section`
-- [ ] **P3-07 Stack ledger** — 3 groups, core/utility chips, all items flagged for owner review.
+- [x] **P3-07 Stack ledger** — 3 groups, core/utility chips, all items flagged for owner review.
       Commit: `feat(stack): add stack ledger`
 - [ ] **P3-08 About** — `Portrait` (owner photo slot or monogram frame), narrative, indexed principles list.
       Commit: `feat(about): add about section`

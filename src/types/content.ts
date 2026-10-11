@@ -140,6 +140,9 @@ export interface UiLabels {
   servicesTitle: string
   servicesLede: string
   consultCta: string
+  stackEyebrow: string
+  stackTitle: string
+  stackLede: string
 }
 
 export interface SiteContent {
