@@ -150,7 +150,7 @@ a render + axe test. Browser screenshot check at the end of each section task.
       honeypot (off-screen, `tabIndex=-1`, `autocomplete=off`). Tests with user-event. Commit: `feat(contact): add validated contact form`
 - [x] **P3-11 Contact section + direct links** — `#contact` layout 5/7, `ContactLinks` (mailto, GitHub, LinkedIn,
       `wa.me`), external links `rel="noopener noreferrer"`. Commit: `feat(contact): add contact section with direct links`
-- [ ] **P3-12 Footer** — beacon, indexed directory (anchors work from any route), direct lines, specs, dynamic year.
+- [x] **P3-12 Footer** — beacon, indexed directory (anchors work from any route), direct lines, specs, dynamic year.
       Commit: `feat(layout): add site footer`
 - [ ] **P3-13 Home composition + responsive/theme pass** — compose `HomePage`; verify heading order, landmarks,
       4/8/12 grid at 375/768/1280/1440 × 4 themes in browser; fix issues. Commit: `fix(ui): polish responsive layout across themes`

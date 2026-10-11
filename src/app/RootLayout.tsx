@@ -1,9 +1,9 @@
 import { Outlet } from 'react-router'
-import { Container } from '@/components/Container'
 import { SkipLink } from '@/components/SkipLink'
 import { useLocale } from '@/features/i18n/useLocale'
 import { useContent } from '@/features/i18n/useContent'
 import { SiteHeader } from '@/features/layout/SiteHeader'
+import { SiteFooter } from '@/features/layout/SiteFooter'
 
 export function RootLayout() {
   const { locale } = useLocale()
@@ -19,13 +19,7 @@ export function RootLayout() {
         <Outlet />
       </main>
 
-      <footer className="border-hairline bg-surface-sunken text-body-sm text-subtle border-t py-8 text-center font-mono">
-        <Container>
-          <p>
-            © {new Date().getFullYear()} {content.meta.name}. {content.footer.rights}
-          </p>
-        </Container>
-      </footer>
+      <SiteFooter content={content} locale={locale} />
     </div>
   )
 }
