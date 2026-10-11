@@ -10,7 +10,6 @@ export interface ThemeSwitcherProps {
 const DEFAULT_LABELS: Record<ThemeChoice, string> = {
   light: 'Light',
   dark: 'Dark',
-  glass: 'Glass',
   system: 'System',
 }
 

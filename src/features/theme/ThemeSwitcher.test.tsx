@@ -12,7 +12,7 @@ describe('ThemeSwitcher', () => {
 
   it('renders a role="radiogroup" with accessible name', () => {
     const { getByRole, getAllByRole } = render(
-      <ThemeProvider defaultChoice="glass">
+      <ThemeProvider defaultChoice="dark">
         <ThemeSwitcher ariaLabel="Color scheme" />
       </ThemeProvider>,
     )
@@ -21,8 +21,8 @@ describe('ThemeSwitcher', () => {
     expect(group).toBeInTheDocument()
 
     const radios = getAllByRole('radio')
-    expect(radios).toHaveLength(4)
-    expect(getByRole('radio', { name: 'Glass' })).toHaveAttribute('data-state', 'checked')
+    expect(radios).toHaveLength(3)
+    expect(getByRole('radio', { name: 'Dark' })).toHaveAttribute('data-state', 'checked')
   })
 
   it('changes selection on click and persists to storage', async () => {

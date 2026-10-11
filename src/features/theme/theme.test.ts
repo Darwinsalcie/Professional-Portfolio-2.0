@@ -13,7 +13,6 @@ describe('pure theme logic', () => {
     it('returns true for all valid theme choices', () => {
       expect(isThemeChoice('light')).toBe(true)
       expect(isThemeChoice('dark')).toBe(true)
-      expect(isThemeChoice('glass')).toBe(true)
       expect(isThemeChoice('system')).toBe(true)
     })
 
@@ -69,8 +68,8 @@ describe('pure theme logic', () => {
       const mockStorage = {
         setItem: vi.fn(),
       }
-      writeStoredChoice('glass', mockStorage)
-      expect(mockStorage.setItem).toHaveBeenCalledWith(THEME_STORAGE_KEY, 'glass')
+      writeStoredChoice('dark', mockStorage)
+      expect(mockStorage.setItem).toHaveBeenCalledWith(THEME_STORAGE_KEY, 'dark')
     })
 
     it('handles storage write errors gracefully', () => {
@@ -98,7 +97,7 @@ describe('pure theme logic', () => {
     })
 
     it('resolves explicit choices regardless of prefersDark', () => {
-      const explicitChoices: ThemeChoice[] = ['light', 'dark', 'glass']
+      const explicitChoices: ThemeChoice[] = ['light', 'dark']
       for (const choice of explicitChoices) {
         expect(resolveTheme(choice, true)).toBe(choice)
         expect(resolveTheme(choice, false)).toBe(choice)
@@ -123,15 +122,6 @@ describe('pure theme logic', () => {
       expect(root.getAttribute('data-theme')).toBe('light')
       expect(root.getAttribute('data-theme-choice')).toBe('light')
       expect(root.style.colorScheme).toBe('light')
-    })
-
-    it('sets attributes and color-scheme for glass theme', () => {
-      const root = document.createElement('html')
-      applyTheme(root, 'glass', 'glass')
-
-      expect(root.getAttribute('data-theme')).toBe('glass')
-      expect(root.getAttribute('data-theme-choice')).toBe('glass')
-      expect(root.style.colorScheme).toBe('dark')
     })
   })
 })
