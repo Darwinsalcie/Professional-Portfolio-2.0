@@ -128,6 +128,8 @@ export interface UiLabels {
   notFoundTitle: string
   notFoundLede: string
   returnHome: string
+  headerNavAria: string
+  hireMe: string
 }
 
 export interface SiteContent {

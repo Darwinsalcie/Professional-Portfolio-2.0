@@ -8,6 +8,8 @@ export const uiContent: Localized<UiLabels> = {
     notFoundTitle: 'Página no encontrada',
     notFoundLede: 'La ruta solicitada no existe o ha sido movida.',
     returnHome: 'Volver al inicio',
+    headerNavAria: 'Navegación principal',
+    hireMe: 'Contrátame',
   },
   en: {
     themeSwitcherAria: 'Select color theme',
@@ -16,5 +18,7 @@ export const uiContent: Localized<UiLabels> = {
     notFoundTitle: 'Page Not Found',
     notFoundLede: 'The requested route does not exist or has been moved.',
     returnHome: 'Return to home',
+    headerNavAria: 'Main navigation',
+    hireMe: 'Hire me',
   },
 }

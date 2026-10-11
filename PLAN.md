@@ -127,7 +127,7 @@ a render + axe test. Browser screenshot check at the end of each section task.
 - [x] **P3-01 UI primitives** — `Button` (cva primary/ghost/mono, asChild), `Card`, `Chip`, `SectionHeader`,
       `IndexNumber`, `StatusBeacon`, `Monogram`, `VisuallyHidden`. Tests: variants render, link-as-button semantics.
       Commit: `feat(ui): add design system primitives`
-- [ ] **P3-02 Header (desktop)** — sticky translucent header, monogram + name/role, `DesktopNav` (section anchors,
+- [x] **P3-02 Header (desktop)** — sticky translucent header, monogram + name/role, `DesktopNav` (section anchors,
       `useActiveSection` → `aria-current`), ThemeSwitcher, LanguageSwitcher, Avatar, "Hire me" → `#contact`.
       Commit: `feat(layout): add site header with theme and language switchers`
 - [ ] **P3-03 Mobile nav** — shadcn `sheet` (Radix Dialog): trigger with `aria-expanded`/label, focus trap, Esc,
