@@ -159,14 +159,14 @@ a render + axe test. Browser screenshot check at the end of each section task.
 
 ## Phase 4 — Case study page & routing · branch `feat/phase-4-case-studies`
 
-- [ ] **P4-01 Case study content** — extend `Project.caseStudy` (problem, approach, architecture, outcomes, role,
+- [x] **P4-01 Case study content** — extend `Project.caseStudy` (problem, approach, architecture, outcomes, role,
       timeline, links, optional cover) with placeholders + integrity tests. Commit: `feat(content): add case study content model`
-- [ ] **P4-02 Case study page** — lazy `/work/:slug`: header, meta sidebar (xl 8/4 split), body with indexed lists,
+- [x] **P4-02 Case study page** — lazy `/work/:slug`: header, meta sidebar (xl 8/4 split), body with indexed lists,
       prev/next pager; unknown slug → NotFound. Tests for both. Commit: `feat(case-study): add data-driven case study page`
-- [ ] **P4-03 Scroll & focus management** — scroll to top on route change, focus page `h1` (tabIndex -1) on navigation,
+- [x] **P4-03 Scroll & focus management** — scroll to top on route change, focus page `h1` (tabIndex -1) on navigation,
       route announcer live region, hash links (`/#contact`) scroll correctly from subpages, header offset via
       `scroll-margin-top`. Tests. Commit: `feat(app): manage scroll and focus on navigation`
-- [ ] **P4-04 Per-route metadata + 404** — `Seo` component (title, description, canonical, OG) on Home, CaseStudy,
+- [x] **P4-04 Per-route metadata + 404** — `Seo` component (title, description, canonical, OG) on Home, CaseStudy,
       NotFound. Commit: `feat(seo): add per-route metadata`
 
 ---
