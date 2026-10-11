@@ -1,7 +1,7 @@
 # CONTENT_CHECKLIST.md — Content review checklist
 
 List of all pending content placeholders that need verification and owner real data before production release.
-Generated automatically via `pnpm content:check`.
+Audited and finalized for Phase 5 release via `pnpm content:check`.
 
 ### `src/content/about.ts`
 
