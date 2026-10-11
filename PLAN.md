@@ -142,7 +142,7 @@ a render + axe test. Browser screenshot check at the end of each section task.
       Commit: `feat(stack): add stack ledger`
 - [x] **P3-08 About** — `Portrait` (owner photo slot or monogram frame), narrative, indexed principles list.
       Commit: `feat(about): add about section`
-- [ ] **P3-09 Contact schema + submitContact** — Zod schema (name 2–80, email, message 20–2000, honeypot empty),
+- [x] **P3-09 Contact schema + submitContact** — Zod schema (name 2–80, email, message 20–2000, honeypot empty),
       `submit-contact.ts` per ADR-006, `lib/env.ts` typed env. Unit tests (valid/invalid, honeypot, endpoint ok/fail,
       not-configured in prod). Commit: `feat(contact): add contact schema and submission abstraction`
 - [ ] **P3-10 Contact form UI** — RHF + zodResolver, ui `Label/Input/Textarea`, `aria-invalid` + `aria-describedby`
