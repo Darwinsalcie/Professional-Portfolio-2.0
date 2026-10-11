@@ -3,9 +3,15 @@ import { ProjectsSection } from '@/features/projects/ProjectsSection'
 import { ServicesSection } from '@/features/services/ServicesSection'
 import { StackSection } from '@/features/stack/StackSection'
 import { AboutSection } from '@/features/about/AboutSection'
+import { ContactSection } from '@/features/contact/ContactSection'
 import { useLocale } from '@/features/i18n/useLocale'
 import { useContent } from '@/features/i18n/useContent'
 
+/**
+ * Main localized home page route component.
+ * Composes Hero (#top), Projects (#work), Services (#services),
+ * Stack Ledger (#stack), About (#about), and Contact (#contact).
+ */
 export function HomePage() {
   const { locale } = useLocale()
   const content = useContent()
@@ -17,6 +23,7 @@ export function HomePage() {
       <ServicesSection services={content.services} ui={content.ui} locale={locale} />
       <StackSection stack={content.stack} ui={content.ui} />
       <AboutSection about={content.about} meta={content.meta} />
+      <ContactSection contact={content.contact} />
     </div>
   )
 }

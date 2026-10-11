@@ -112,4 +112,5 @@ Never write claims like "10 years of experience", "8.4B events", "millions of us
 
 ## Living rules
 
-When the owner corrects a recurring mistake, propose a one-line rule for this file.
+- Never use the browser subagent or automated browser walkthroughs (scrolling, clicking, mouse movements) unless explicitly requested by the owner. Keep verification in fast CLI gates.
+- When the owner corrects a recurring mistake, propose a one-line rule for this file.
