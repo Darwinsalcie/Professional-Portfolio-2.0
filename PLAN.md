@@ -173,20 +173,20 @@ a render + axe test. Browser screenshot check at the end of each section task.
 
 ## Phase 5 — Polish & quality gates · branch `feat/phase-5-polish`
 
-- [ ] **P5-01 Motion pass** — `MotionConfig reducedMotion="user"`, `LazyMotion`, `Reveal` on section headers/cards,
+- [x] **P5-01 Motion pass** — `MotionConfig reducedMotion="user"`, `LazyMotion`, `Reveal` on section headers/cards,
       CSS hover micro-interactions (button scale 1.015, card border illumination, row hover indent). Commit: `feat(motion): add subtle reveal and hover motion`
-- [ ] **P5-02 SEO assets** — `index.html` meta/OG/Twitter, canonical from `site.url`, `robots.txt`, postbuild
+- [x] **P5-02 SEO assets** — `index.html` meta/OG/Twitter, canonical from `site.url`, `robots.txt`, postbuild
       `sitemap.xml` script, JSON-LD `Person` (only owner-provided fields), favicon set + manifest, OG image 1200×630
       (typographic, on-brand; needs Q6). Commit: `feat(seo): add sitemap, structured data and social cards`
-- [ ] **P5-03 Images** — AVIF/WebP with explicit width/height, `loading="lazy"`/`decoding="async"` below fold,
+- [x] **P5-03 Images** — AVIF/WebP with explicit width/height, `loading="lazy"`/`decoding="async"` below fold,
       `fetchpriority` for any LCP image. Commit: `perf(images): serve optimized responsive images`
-- [ ] **P5-04 Accessibility audit** — axe tests per page in all themes; keyboard walkthrough; fix findings (each
+- [x] **P5-04 Accessibility audit** — axe tests per page in all themes; keyboard walkthrough; fix findings (each
       fix its own commit if non-trivial). Commit: `test(a11y): add axe audits for all pages and themes`
-- [ ] **P5-05 Lighthouse** — `pnpm build && pnpm preview`, run `pnpm dlx @lhci/cli autorun` (mobile) on `/` and one
+- [x] **P5-05 Lighthouse** — `pnpm build && pnpm preview`, run `pnpm dlx @lhci/cli autorun` (mobile) on `/` and one
       case study; reach ≥95 in all four categories; record scores in `docs/QUALITY.md`. Commit: `perf: reach lighthouse 95+ on mobile`
-- [ ] **P5-06 README** — what/why, setup (<10 min), scripts, architecture overview, editing content, theme system,
+- [x] **P5-06 README** — what/why, setup (<10 min), scripts, architecture overview, editing content, theme system,
       contact endpoint, deploy. Commit: `docs: write project readme`
-- [ ] **P5-07 Content checklist** — final `CONTENT_CHECKLIST.md` from `pnpm content:check`, grouped by file.
+- [x] **P5-07 Content checklist** — final `CONTENT_CHECKLIST.md` from `pnpm content:check`, grouped by file.
       Commit: `docs(content): finalize content checklist`
 
 ---
