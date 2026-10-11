@@ -1,5 +1,6 @@
 import { Outlet } from 'react-router'
 import { SkipLink } from '@/components/SkipLink'
+import { RouteNavigationManager } from '@/components/RouteNavigationManager'
 import { useLocale } from '@/features/i18n/useLocale'
 import { useContent } from '@/features/i18n/useContent'
 import { SiteHeader } from '@/features/layout/SiteHeader'
@@ -12,6 +13,7 @@ export function RootLayout() {
   return (
     <div className="bg-bg text-fg-body flex min-h-screen flex-col">
       <SkipLink targetId="main" label={content.ui.skipLink} />
+      <RouteNavigationManager />
 
       <SiteHeader content={content} locale={locale} />
 
