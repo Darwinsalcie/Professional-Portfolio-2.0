@@ -240,7 +240,7 @@ export function CaseStudyDetail({
             {prevProject ? (
               <Link
                 to={`/${locale}/work/${prevProject.slug}`}
-                className="group rounded-control border-hairline hover:border-accent bg-surface flex flex-1 items-center gap-4 border p-4 transition-colors"
+                className="group rounded-control border-hairline hover:border-hairline-strong bg-surface hover:bg-surface-hover flex flex-1 items-center gap-4 border p-4 transition-all hover:-translate-x-1"
               >
                 <ArrowLeft className="text-muted group-hover:text-accent-fg h-5 w-5 shrink-0 transition-colors" />
                 <div className="min-w-0">
@@ -259,7 +259,7 @@ export function CaseStudyDetail({
             {nextProject ? (
               <Link
                 to={`/${locale}/work/${nextProject.slug}`}
-                className="group rounded-control border-hairline hover:border-accent bg-surface flex flex-1 items-center justify-end gap-4 border p-4 text-right transition-colors"
+                className="group rounded-control border-hairline hover:border-hairline-strong bg-surface hover:bg-surface-hover flex flex-1 items-center justify-end gap-4 border p-4 text-right transition-all hover:translate-x-1"
               >
                 <div className="min-w-0">
                   <span className="text-label-caps text-subtle block font-mono uppercase">

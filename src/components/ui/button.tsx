@@ -10,9 +10,9 @@ const buttonVariants = cva(
     variants: {
       variant: {
         primary:
-          'bg-accent text-on-accent rounded-control shadow-card hover:bg-accent-hover hover:text-on-accent active:scale-[0.99]',
+          'bg-accent text-on-accent rounded-control shadow-card hover:bg-accent-hover hover:text-on-accent hover:scale-[1.015] active:scale-[0.99]',
         ghost:
-          'bg-white/[0.04] backdrop-blur-xl text-fg rounded-control border border-hairline hover:bg-white/[0.08] hover:border-hairline-strong active:scale-[0.99]',
+          'bg-white/[0.04] backdrop-blur-xl text-fg rounded-control border border-hairline hover:bg-white/[0.08] hover:border-hairline-strong hover:scale-[1.015] active:scale-[0.99]',
         mono: 'font-mono text-label-code text-accent-fg hover:underline p-0 gap-1.5 focus-visible:outline-offset-1',
       },
       size: {
