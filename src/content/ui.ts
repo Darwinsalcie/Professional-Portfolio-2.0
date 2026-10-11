@@ -16,6 +16,11 @@ export const uiContent: Localized<UiLabels> = {
     projectsEyebrow: 'Casos de Producción',
     projectsTitle: 'Proyectos Destacados',
     projectsLede: 'Soluciones técnicas diseñadas para alta escala y confiabilidad operativa.',
+    servicesEyebrow: 'Capacidades',
+    servicesTitle: 'Servicios Especializados',
+    servicesLede:
+      'Soluciones técnicas enfocadas en resolver arquitecturas complejas y entregar productos de calidad institucional.',
+    consultCta: 'Consultar proyecto',
   },
   en: {
     themeSwitcherAria: 'Select color theme',
@@ -33,5 +38,10 @@ export const uiContent: Localized<UiLabels> = {
     projectsTitle: 'Featured Projects',
     projectsLede:
       'Engineered architectures built for scale thresholds and mission-critical workflows.',
+    servicesEyebrow: 'Capabilities',
+    servicesTitle: 'Specialized Consulting',
+    servicesLede:
+      'Focused technical leadership to build high-scale architectures and deliver institutional-grade software.',
+    consultCta: 'Consult on a project',
   },
 }

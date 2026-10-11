@@ -136,6 +136,10 @@ export interface UiLabels {
   projectsEyebrow: string
   projectsTitle: string
   projectsLede: string
+  servicesEyebrow: string
+  servicesTitle: string
+  servicesLede: string
+  consultCta: string
 }
 
 export interface SiteContent {

@@ -136,7 +136,7 @@ a render + axe test. Browser screenshot check at the end of each section task.
       `role="img"` + title/desc, fixed aspect ratio. Commit: `feat(hero): add hero with system topology diagram`
 - [x] **P3-05 Featured projects** — `ProjectsSection` (`#work`) + `ProjectCard` linking `/work/:slug`, 3-col xl /
       2-col md / 1-col mobile. Commit: `feat(projects): add featured project cards`
-- [ ] **P3-06 Services** — landing pages, web applications, full-stack/.NET; lucide icon map; benefit lists; CTA.
+- [x] **P3-06 Services** — landing pages, web applications, full-stack/.NET; lucide icon map; benefit lists; CTA.
       Commit: `feat(services): add services section`
 - [ ] **P3-07 Stack ledger** — 3 groups, core/utility chips, all items flagged for owner review.
       Commit: `feat(stack): add stack ledger`
