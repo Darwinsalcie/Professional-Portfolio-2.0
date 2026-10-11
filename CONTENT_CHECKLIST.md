@@ -9,9 +9,9 @@ Generated automatically via `pnpm content:check`.
 - [ ] Line 6: About section eyebrow
 - [ ] Line 10: Owner bio narrative paragraph 1
 - [ ] Line 12: Owner bio narrative paragraph 2
-- [ ] Line 34: About section eyebrow
-- [ ] Line 38: Owner bio narrative paragraph 1
-- [ ] Line 40: Owner bio narrative paragraph 2
+- [ ] Line 37: About section eyebrow
+- [ ] Line 41: Owner bio narrative paragraph 1
+- [ ] Line 43: Owner bio narrative paragraph 2
 
 ### `src/content/contact.ts`
 

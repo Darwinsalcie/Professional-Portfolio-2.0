@@ -124,7 +124,7 @@ Legend per task: **Goal** · **Accept** (acceptance criteria) · **Files** · **
 Each section: responsive at 375/768/1280/1440, keyboard-complete, AA in all themes, content from `src/content/`,
 a render + axe test. Browser screenshot check at the end of each section task.
 
-- [ ] **P3-01 UI primitives** — `Button` (cva primary/ghost/mono, asChild), `Card`, `Chip`, `SectionHeader`,
+- [x] **P3-01 UI primitives** — `Button` (cva primary/ghost/mono, asChild), `Card`, `Chip`, `SectionHeader`,
       `IndexNumber`, `StatusBeacon`, `Monogram`, `VisuallyHidden`. Tests: variants render, link-as-button semantics.
       Commit: `feat(ui): add design system primitives`
 - [ ] **P3-02 Header (desktop)** — sticky translucent header, monogram + name/role, `DesktopNav` (section anchors,
