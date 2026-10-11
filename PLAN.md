@@ -148,7 +148,7 @@ a render + axe test. Browser screenshot check at the end of each section task.
 - [x] **P3-10 Contact form UI** — RHF + zodResolver, ui `Label/Input/Textarea`, `aria-invalid` + `aria-describedby`
       errors, focus first invalid field, `aria-live` status, success/error states, disabled while submitting, hidden
       honeypot (off-screen, `tabIndex=-1`, `autocomplete=off`). Tests with user-event. Commit: `feat(contact): add validated contact form`
-- [ ] **P3-11 Contact section + direct links** — `#contact` layout 5/7, `ContactLinks` (mailto, GitHub, LinkedIn,
+- [x] **P3-11 Contact section + direct links** — `#contact` layout 5/7, `ContactLinks` (mailto, GitHub, LinkedIn,
       `wa.me`), external links `rel="noopener noreferrer"`. Commit: `feat(contact): add contact section with direct links`
 - [ ] **P3-12 Footer** — beacon, indexed directory (anchors work from any route), direct lines, specs, dynamic year.
       Commit: `feat(layout): add site footer`
