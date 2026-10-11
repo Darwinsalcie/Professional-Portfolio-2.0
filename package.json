@@ -11,6 +11,7 @@
     "preinstall": "pnpm dlx only-allow pnpm",
     "dev": "vite",
     "build": "tsc -b && vite build",
+    "postbuild": "node --experimental-strip-types scripts/generate-sitemap.ts",
     "preview": "vite preview",
     "typecheck": "tsc -b",
     "lint": "eslint . --max-warnings 0",
