@@ -3,6 +3,7 @@ import { Container } from '@/components/Container'
 import { useLocale } from '@/features/i18n/useLocale'
 import { useContent } from '@/features/i18n/useContent'
 import { CaseStudyDetail } from '@/features/case-study/CaseStudyDetail'
+import { Seo } from '@/components/Seo'
 
 export function CaseStudyPage() {
   const { slug } = useParams<{ slug: string }>()
@@ -15,6 +16,12 @@ export function CaseStudyPage() {
   if (!project) {
     return (
       <Container className="py-24 text-center">
+        <Seo
+          title={`${content.ui.notFoundTitle} — ${content.meta.name}`}
+          description={content.ui.notFoundLede}
+          locale={locale}
+          siteUrl={content.meta.url}
+        />
         <p className="text-label-code text-accent-fg font-mono">404 // NOT FOUND</p>
         <h1 tabIndex={-1} className="text-headline-lg text-fg mt-2 font-semibold outline-none">
           {content.ui.notFoundTitle}
@@ -37,12 +44,21 @@ export function CaseStudyPage() {
     projectIndex < content.projects.length - 1 ? content.projects[projectIndex + 1] : undefined
 
   return (
-    <CaseStudyDetail
-      project={project}
-      locale={locale}
-      ui={content.ui}
-      prevProject={prevProject}
-      nextProject={nextProject}
-    />
+    <>
+      <Seo
+        title={`${project.title} — ${content.meta.name}`}
+        description={project.summary}
+        locale={locale}
+        siteUrl={content.meta.url}
+        type="article"
+      />
+      <CaseStudyDetail
+        project={project}
+        locale={locale}
+        ui={content.ui}
+        prevProject={prevProject}
+        nextProject={nextProject}
+      />
+    </>
   )
 }

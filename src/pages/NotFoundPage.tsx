@@ -1,5 +1,6 @@
 import { Link } from 'react-router'
 import { Container } from '@/components/Container'
+import { Seo } from '@/components/Seo'
 import { useLocale } from '@/features/i18n/useLocale'
 import { useContent } from '@/features/i18n/useContent'
 
@@ -9,6 +10,12 @@ export function NotFoundPage() {
 
   return (
     <Container className="py-24 text-center">
+      <Seo
+        title={`${content.ui.notFoundTitle} — ${content.meta.name}`}
+        description={content.ui.notFoundLede}
+        locale={locale}
+        siteUrl={content.meta.url}
+      />
       <p className="text-label-code text-accent-fg font-mono">404 // NOT FOUND</p>
       <h1 tabIndex={-1} className="text-headline-lg text-fg mt-2 font-semibold outline-none">
         {content.ui.notFoundTitle}

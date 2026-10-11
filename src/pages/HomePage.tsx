@@ -7,6 +7,8 @@ import { ContactSection } from '@/features/contact/ContactSection'
 import { useLocale } from '@/features/i18n/useLocale'
 import { useContent } from '@/features/i18n/useContent'
 
+import { Seo } from '@/components/Seo'
+
 /**
  * Main localized home page route component.
  * Composes Hero (#top), Projects (#work), Services (#services),
@@ -16,8 +18,12 @@ export function HomePage() {
   const { locale } = useLocale()
   const content = useContent()
 
+  const seoTitle = `${content.meta.name} — ${content.meta.role}`
+  const seoDesc = content.hero.lede
+
   return (
     <div className="flex flex-col">
+      <Seo title={seoTitle} description={seoDesc} locale={locale} siteUrl={content.meta.url} />
       <Hero content={content.hero} locale={locale} />
       <ProjectsSection projects={content.projects} ui={content.ui} locale={locale} />
       <ServicesSection services={content.services} ui={content.ui} locale={locale} />
