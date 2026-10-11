@@ -132,7 +132,7 @@ a render + axe test. Browser screenshot check at the end of each section task.
       Commit: `feat(layout): add site header with theme and language switchers`
 - [x] **P3-03 Mobile nav** — shadcn `sheet` (Radix Dialog): trigger with `aria-expanded`/label, focus trap, Esc,
       focus return, closes on link click, ThemeSwitcher inside. Tests for open/close/focus. Commit: `feat(layout): add accessible mobile menu`
-- [ ] **P3-04 Hero + TopologyDiagram** — single `h1`, eyebrow, lede, 2 CTAs; SVG diagram themed via CSS vars,
+- [x] **P3-04 Hero + TopologyDiagram** — single `h1`, eyebrow, lede, 2 CTAs; SVG diagram themed via CSS vars,
       `role="img"` + title/desc, fixed aspect ratio. Commit: `feat(hero): add hero with system topology diagram`
 - [ ] **P3-05 Featured projects** — `ProjectsSection` (`#work`) + `ProjectCard` linking `/work/:slug`, 3-col xl /
       2-col md / 1-col mobile. Commit: `feat(projects): add featured project cards`
