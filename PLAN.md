@@ -140,7 +140,7 @@ a render + axe test. Browser screenshot check at the end of each section task.
       Commit: `feat(services): add services section`
 - [x] **P3-07 Stack ledger** — 3 groups, core/utility chips, all items flagged for owner review.
       Commit: `feat(stack): add stack ledger`
-- [ ] **P3-08 About** — `Portrait` (owner photo slot or monogram frame), narrative, indexed principles list.
+- [x] **P3-08 About** — `Portrait` (owner photo slot or monogram frame), narrative, indexed principles list.
       Commit: `feat(about): add about section`
 - [ ] **P3-09 Contact schema + submitContact** — Zod schema (name 2–80, email, message 20–2000, honeypot empty),
       `submit-contact.ts` per ADR-006, `lib/env.ts` typed env. Unit tests (valid/invalid, honeypot, endpoint ok/fail,
