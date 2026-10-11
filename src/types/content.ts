@@ -62,6 +62,10 @@ export interface CaseStudySection {
   approach: string[]
   architecture: string[]
   outcomes: string[]
+  cover?: {
+    src: string
+    alt: string
+  }
 }
 
 export interface ProjectItem {
