@@ -145,7 +145,7 @@ a render + axe test. Browser screenshot check at the end of each section task.
 - [x] **P3-09 Contact schema + submitContact** — Zod schema (name 2–80, email, message 20–2000, honeypot empty),
       `submit-contact.ts` per ADR-006, `lib/env.ts` typed env. Unit tests (valid/invalid, honeypot, endpoint ok/fail,
       not-configured in prod). Commit: `feat(contact): add contact schema and submission abstraction`
-- [ ] **P3-10 Contact form UI** — RHF + zodResolver, ui `Label/Input/Textarea`, `aria-invalid` + `aria-describedby`
+- [x] **P3-10 Contact form UI** — RHF + zodResolver, ui `Label/Input/Textarea`, `aria-invalid` + `aria-describedby`
       errors, focus first invalid field, `aria-live` status, success/error states, disabled while submitting, hidden
       honeypot (off-screen, `tabIndex=-1`, `autocomplete=off`). Tests with user-event. Commit: `feat(contact): add validated contact form`
 - [ ] **P3-11 Contact section + direct links** — `#contact` layout 5/7, `ContactLinks` (mailto, GitHub, LinkedIn,
