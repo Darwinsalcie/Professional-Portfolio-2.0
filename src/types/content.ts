@@ -147,6 +147,19 @@ export interface UiLabels {
   stackEyebrow: string
   stackTitle: string
   stackLede: string
+  caseStudyBack: string
+  caseStudyRole: string
+  caseStudyTimeline: string
+  caseStudyStack: string
+  caseStudyLinks: string
+  caseStudyLiveLink: string
+  caseStudyRepoLink: string
+  caseStudyProblemHeading: string
+  caseStudyApproachHeading: string
+  caseStudyArchitectureHeading: string
+  caseStudyOutcomesHeading: string
+  caseStudyPrev: string
+  caseStudyNext: string
 }
 
 export interface SiteContent {

@@ -1,9 +1,8 @@
+import { Suspense } from 'react'
 import { createBrowserRouter } from 'react-router'
 import { LocaleRedirect } from '@/features/i18n/LocaleRedirect'
 import { LocaleRouteLayout } from '@/features/i18n/LocaleRouteLayout'
-import { CaseStudyPage } from '@/pages/CaseStudyPage'
-import { HomePage } from '@/pages/HomePage'
-import { NotFoundPage } from '@/pages/NotFoundPage'
+import { LazyCaseStudyPage, LazyHomePage, LazyNotFoundPage } from '@/pages/lazy'
 import { RootLayout } from './RootLayout'
 
 export const router = createBrowserRouter([
@@ -20,11 +19,19 @@ export const router = createBrowserRouter([
         children: [
           {
             index: true,
-            element: <HomePage />,
+            element: (
+              <Suspense fallback={null}>
+                <LazyHomePage />
+              </Suspense>
+            ),
           },
           {
             path: 'work/:slug',
-            element: <CaseStudyPage />,
+            element: (
+              <Suspense fallback={null}>
+                <LazyCaseStudyPage />
+              </Suspense>
+            ),
           },
         ],
       },
@@ -32,6 +39,10 @@ export const router = createBrowserRouter([
   },
   {
     path: '*',
-    element: <NotFoundPage />,
+    element: (
+      <Suspense fallback={null}>
+        <LazyNotFoundPage />
+      </Suspense>
+    ),
   },
 ])
