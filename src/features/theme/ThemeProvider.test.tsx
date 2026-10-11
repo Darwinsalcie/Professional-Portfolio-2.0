@@ -67,17 +67,17 @@ describe('ThemeProvider and useTheme', () => {
     })
 
     act(() => {
-      result.current.setChoice('glass')
+      result.current.setChoice('light')
     })
 
-    expect(result.current.choice).toBe('glass')
-    expect(result.current.resolved).toBe('glass')
-    expect(localStorage.getItem(THEME_STORAGE_KEY)).toBe('glass')
-    expect(document.documentElement.getAttribute('data-theme')).toBe('glass')
-    expect(document.documentElement.getAttribute('data-theme-choice')).toBe('glass')
+    expect(result.current.choice).toBe('light')
+    expect(result.current.resolved).toBe('light')
+    expect(localStorage.getItem(THEME_STORAGE_KEY)).toBe('light')
+    expect(document.documentElement.getAttribute('data-theme')).toBe('light')
+    expect(document.documentElement.getAttribute('data-theme-choice')).toBe('light')
 
     const meta = document.querySelector('meta[name="theme-color"]')
-    expect(meta?.getAttribute('content')).toBe('#131315')
+    expect(meta?.getAttribute('content')).toBe('#fbfbf9')
   })
 
   it('reacts to live system scheme changes when choice is system', () => {

@@ -19,12 +19,23 @@ describe('Content model integrity tests', () => {
     expect(esSlugs).toEqual(enSlugs)
 
     contentEs.projects.forEach((proj, idx) => {
+      const enProj = contentEn.projects[idx]
       expect(proj.index).toBe(idx + 1)
-      expect(contentEn.projects[idx]?.index).toBe(idx + 1)
+      expect(enProj?.index).toBe(idx + 1)
       expect(proj.title).toBeTruthy()
       expect(proj.summary).toBeTruthy()
+      expect(proj.role).toBeTruthy()
+      expect(proj.timeline).toBeTruthy()
+      expect(proj.stack.length).toBeGreaterThan(0)
       expect(proj.caseStudy.problem).toBeTruthy()
       expect(proj.caseStudy.approach.length).toBeGreaterThan(0)
+      expect(proj.caseStudy.architecture.length).toBeGreaterThan(0)
+      expect(proj.caseStudy.outcomes.length).toBeGreaterThan(0)
+      if (proj.caseStudy.cover) {
+        expect(proj.caseStudy.cover.src).toBeTruthy()
+        expect(proj.caseStudy.cover.alt).toBeTruthy()
+        expect(enProj?.caseStudy.cover?.src).toBe(proj.caseStudy.cover.src)
+      }
     })
   })
 

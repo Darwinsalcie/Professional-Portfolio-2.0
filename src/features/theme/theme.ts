@@ -58,7 +58,7 @@ export function writeStoredChoice(
 }
 
 /**
- * Resolves a ThemeChoice to a concrete ResolvedTheme ('light' | 'dark' | 'glass').
+ * Resolves a ThemeChoice to a concrete ResolvedTheme ('light' | 'dark').
  */
 export function resolveTheme(choice: ThemeChoice, prefersDark: boolean): ResolvedTheme {
   if (choice === 'system') {

@@ -62,6 +62,10 @@ export interface CaseStudySection {
   approach: string[]
   architecture: string[]
   outcomes: string[]
+  cover?: {
+    src: string
+    alt: string
+  }
 }
 
 export interface ProjectItem {
@@ -128,6 +132,34 @@ export interface UiLabels {
   notFoundTitle: string
   notFoundLede: string
   returnHome: string
+  headerNavAria: string
+  hireMe: string
+  menuOpenAria: string
+  closeMenuAria: string
+  viewCaseStudy: string
+  projectsEyebrow: string
+  projectsTitle: string
+  projectsLede: string
+  servicesEyebrow: string
+  servicesTitle: string
+  servicesLede: string
+  consultCta: string
+  stackEyebrow: string
+  stackTitle: string
+  stackLede: string
+  caseStudyBack: string
+  caseStudyRole: string
+  caseStudyTimeline: string
+  caseStudyStack: string
+  caseStudyLinks: string
+  caseStudyLiveLink: string
+  caseStudyRepoLink: string
+  caseStudyProblemHeading: string
+  caseStudyApproachHeading: string
+  caseStudyArchitectureHeading: string
+  caseStudyOutcomesHeading: string
+  caseStudyPrev: string
+  caseStudyNext: string
 }
 
 export interface SiteContent {

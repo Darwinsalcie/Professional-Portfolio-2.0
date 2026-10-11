@@ -32,6 +32,10 @@ export const projectsContent: Localized<ProjectItem[]> = {
           'Reducción en tiempos de carga y respuesta de interfaz.',
           'Flujo de trabajo unificado para operaciones diarias.',
         ],
+        cover: {
+          src: '/images/projects/alpha-platform-cover.svg',
+          alt: 'Diagrama de arquitectura del sistema distribuido Alpha',
+        },
       },
     },
     {
@@ -94,6 +98,10 @@ export const projectsContent: Localized<ProjectItem[]> = {
           'Significant speedup in UI responsiveness and data throughput.',
           'Unified workflow across daily operational activities.',
         ],
+        cover: {
+          src: '/images/projects/alpha-platform-cover.svg',
+          alt: 'Architecture diagram of the Alpha distributed operations platform',
+        },
       },
     },
     {

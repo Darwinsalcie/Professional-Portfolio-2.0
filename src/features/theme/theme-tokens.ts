@@ -1,4 +1,4 @@
-export type ThemeName = 'glass' | 'dark' | 'light'
+export type ThemeName = 'dark' | 'light'
 
 export interface ThemePaletteTokens {
   bg: string
@@ -27,31 +27,6 @@ export interface ThemePaletteTokens {
 }
 
 export const THEME_TOKENS: Record<ThemeName, ThemePaletteTokens> = {
-  glass: {
-    bg: '#131315',
-    surface: 'rgb(255 255 255 / 0.03)',
-    surfaceHover: 'rgb(255 255 255 / 0.06)',
-    surfaceRaised: 'rgb(19 19 21 / 0.85)',
-    surfaceSunken: 'rgb(14 14 16 / 0.6)',
-    control: 'rgb(255 255 255 / 0.03)',
-    hairline: 'rgb(255 255 255 / 0.06)',
-    hairlineStrong: 'rgb(255 255 255 / 0.12)',
-    fg: '#ffffff',
-    fgBody: '#e5e1e4',
-    fgMuted: '#c4c5d7',
-    fgSubtle: '#8e90a0',
-    accent: '#1d4ed8',
-    onAccent: '#ffffff',
-    accentHover: '#b7c4ff',
-    onAccentHover: '#002682',
-    accentFg: '#b7c4ff',
-    eyebrowSecondary: '#b4c5ff',
-    eyebrowTertiary: '#7bd0ff',
-    index: '#7bd0ff',
-    success: '#34d399',
-    danger: '#ffb4ab',
-    focus: '#b7c4ff',
-  },
   dark: {
     bg: '#131315',
     surface: '#1c1b1d',

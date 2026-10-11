@@ -17,6 +17,7 @@
     font-variation-settings: normal;
     -webkit-tap-highlight-color: transparent;
     scroll-behavior: smooth;
+    scroll-padding-top: 5.5rem;
   }
 
   body {

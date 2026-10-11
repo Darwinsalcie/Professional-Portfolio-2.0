@@ -124,69 +124,69 @@ Legend per task: **Goal** · **Accept** (acceptance criteria) · **Files** · **
 Each section: responsive at 375/768/1280/1440, keyboard-complete, AA in all themes, content from `src/content/`,
 a render + axe test. Browser screenshot check at the end of each section task.
 
-- [ ] **P3-01 UI primitives** — `Button` (cva primary/ghost/mono, asChild), `Card`, `Chip`, `SectionHeader`,
+- [x] **P3-01 UI primitives** — `Button` (cva primary/ghost/mono, asChild), `Card`, `Chip`, `SectionHeader`,
       `IndexNumber`, `StatusBeacon`, `Monogram`, `VisuallyHidden`. Tests: variants render, link-as-button semantics.
       Commit: `feat(ui): add design system primitives`
-- [ ] **P3-02 Header (desktop)** — sticky translucent header, monogram + name/role, `DesktopNav` (section anchors,
+- [x] **P3-02 Header (desktop)** — sticky translucent header, monogram + name/role, `DesktopNav` (section anchors,
       `useActiveSection` → `aria-current`), ThemeSwitcher, LanguageSwitcher, Avatar, "Hire me" → `#contact`.
       Commit: `feat(layout): add site header with theme and language switchers`
-- [ ] **P3-03 Mobile nav** — shadcn `sheet` (Radix Dialog): trigger with `aria-expanded`/label, focus trap, Esc,
+- [x] **P3-03 Mobile nav** — shadcn `sheet` (Radix Dialog): trigger with `aria-expanded`/label, focus trap, Esc,
       focus return, closes on link click, ThemeSwitcher inside. Tests for open/close/focus. Commit: `feat(layout): add accessible mobile menu`
-- [ ] **P3-04 Hero + TopologyDiagram** — single `h1`, eyebrow, lede, 2 CTAs; SVG diagram themed via CSS vars,
+- [x] **P3-04 Hero + TopologyDiagram** — single `h1`, eyebrow, lede, 2 CTAs; SVG diagram themed via CSS vars,
       `role="img"` + title/desc, fixed aspect ratio. Commit: `feat(hero): add hero with system topology diagram`
-- [ ] **P3-05 Featured projects** — `ProjectsSection` (`#work`) + `ProjectCard` linking `/work/:slug`, 3-col xl /
+- [x] **P3-05 Featured projects** — `ProjectsSection` (`#work`) + `ProjectCard` linking `/work/:slug`, 3-col xl /
       2-col md / 1-col mobile. Commit: `feat(projects): add featured project cards`
-- [ ] **P3-06 Services** — landing pages, web applications, full-stack/.NET; lucide icon map; benefit lists; CTA.
+- [x] **P3-06 Services** — landing pages, web applications, full-stack/.NET; lucide icon map; benefit lists; CTA.
       Commit: `feat(services): add services section`
-- [ ] **P3-07 Stack ledger** — 3 groups, core/utility chips, all items flagged for owner review.
+- [x] **P3-07 Stack ledger** — 3 groups, core/utility chips, all items flagged for owner review.
       Commit: `feat(stack): add stack ledger`
-- [ ] **P3-08 About** — `Portrait` (owner photo slot or monogram frame), narrative, indexed principles list.
+- [x] **P3-08 About** — `Portrait` (owner photo slot or monogram frame), narrative, indexed principles list.
       Commit: `feat(about): add about section`
-- [ ] **P3-09 Contact schema + submitContact** — Zod schema (name 2–80, email, message 20–2000, honeypot empty),
+- [x] **P3-09 Contact schema + submitContact** — Zod schema (name 2–80, email, message 20–2000, honeypot empty),
       `submit-contact.ts` per ADR-006, `lib/env.ts` typed env. Unit tests (valid/invalid, honeypot, endpoint ok/fail,
       not-configured in prod). Commit: `feat(contact): add contact schema and submission abstraction`
-- [ ] **P3-10 Contact form UI** — RHF + zodResolver, ui `Label/Input/Textarea`, `aria-invalid` + `aria-describedby`
+- [x] **P3-10 Contact form UI** — RHF + zodResolver, ui `Label/Input/Textarea`, `aria-invalid` + `aria-describedby`
       errors, focus first invalid field, `aria-live` status, success/error states, disabled while submitting, hidden
       honeypot (off-screen, `tabIndex=-1`, `autocomplete=off`). Tests with user-event. Commit: `feat(contact): add validated contact form`
-- [ ] **P3-11 Contact section + direct links** — `#contact` layout 5/7, `ContactLinks` (mailto, GitHub, LinkedIn,
+- [x] **P3-11 Contact section + direct links** — `#contact` layout 5/7, `ContactLinks` (mailto, GitHub, LinkedIn,
       `wa.me`), external links `rel="noopener noreferrer"`. Commit: `feat(contact): add contact section with direct links`
-- [ ] **P3-12 Footer** — beacon, indexed directory (anchors work from any route), direct lines, specs, dynamic year.
+- [x] **P3-12 Footer** — beacon, indexed directory (anchors work from any route), direct lines, specs, dynamic year.
       Commit: `feat(layout): add site footer`
-- [ ] **P3-13 Home composition + responsive/theme pass** — compose `HomePage`; verify heading order, landmarks,
-      4/8/12 grid at 375/768/1280/1440 × 4 themes in browser; fix issues. Commit: `fix(ui): polish responsive layout across themes`
+- [x] **P3-13 Home composition + responsive/theme pass** — compose `HomePage`; verify heading order, landmarks,
+      4/8/12 grid at 375/768/1280/1440 × 4 themes; fix issues. Commit: `fix(ui): polish responsive layout across themes`
 
 ---
 
 ## Phase 4 — Case study page & routing · branch `feat/phase-4-case-studies`
 
-- [ ] **P4-01 Case study content** — extend `Project.caseStudy` (problem, approach, architecture, outcomes, role,
+- [x] **P4-01 Case study content** — extend `Project.caseStudy` (problem, approach, architecture, outcomes, role,
       timeline, links, optional cover) with placeholders + integrity tests. Commit: `feat(content): add case study content model`
-- [ ] **P4-02 Case study page** — lazy `/work/:slug`: header, meta sidebar (xl 8/4 split), body with indexed lists,
+- [x] **P4-02 Case study page** — lazy `/work/:slug`: header, meta sidebar (xl 8/4 split), body with indexed lists,
       prev/next pager; unknown slug → NotFound. Tests for both. Commit: `feat(case-study): add data-driven case study page`
-- [ ] **P4-03 Scroll & focus management** — scroll to top on route change, focus page `h1` (tabIndex -1) on navigation,
+- [x] **P4-03 Scroll & focus management** — scroll to top on route change, focus page `h1` (tabIndex -1) on navigation,
       route announcer live region, hash links (`/#contact`) scroll correctly from subpages, header offset via
       `scroll-margin-top`. Tests. Commit: `feat(app): manage scroll and focus on navigation`
-- [ ] **P4-04 Per-route metadata + 404** — `Seo` component (title, description, canonical, OG) on Home, CaseStudy,
+- [x] **P4-04 Per-route metadata + 404** — `Seo` component (title, description, canonical, OG) on Home, CaseStudy,
       NotFound. Commit: `feat(seo): add per-route metadata`
 
 ---
 
 ## Phase 5 — Polish & quality gates · branch `feat/phase-5-polish`
 
-- [ ] **P5-01 Motion pass** — `MotionConfig reducedMotion="user"`, `LazyMotion`, `Reveal` on section headers/cards,
+- [x] **P5-01 Motion pass** — `MotionConfig reducedMotion="user"`, `LazyMotion`, `Reveal` on section headers/cards,
       CSS hover micro-interactions (button scale 1.015, card border illumination, row hover indent). Commit: `feat(motion): add subtle reveal and hover motion`
-- [ ] **P5-02 SEO assets** — `index.html` meta/OG/Twitter, canonical from `site.url`, `robots.txt`, postbuild
+- [x] **P5-02 SEO assets** — `index.html` meta/OG/Twitter, canonical from `site.url`, `robots.txt`, postbuild
       `sitemap.xml` script, JSON-LD `Person` (only owner-provided fields), favicon set + manifest, OG image 1200×630
       (typographic, on-brand; needs Q6). Commit: `feat(seo): add sitemap, structured data and social cards`
-- [ ] **P5-03 Images** — AVIF/WebP with explicit width/height, `loading="lazy"`/`decoding="async"` below fold,
+- [x] **P5-03 Images** — AVIF/WebP with explicit width/height, `loading="lazy"`/`decoding="async"` below fold,
       `fetchpriority` for any LCP image. Commit: `perf(images): serve optimized responsive images`
-- [ ] **P5-04 Accessibility audit** — axe tests per page in all themes; keyboard walkthrough; fix findings (each
+- [x] **P5-04 Accessibility audit** — axe tests per page in all themes; keyboard walkthrough; fix findings (each
       fix its own commit if non-trivial). Commit: `test(a11y): add axe audits for all pages and themes`
-- [ ] **P5-05 Lighthouse** — `pnpm build && pnpm preview`, run `pnpm dlx @lhci/cli autorun` (mobile) on `/` and one
+- [x] **P5-05 Lighthouse** — `pnpm build && pnpm preview`, run `pnpm dlx @lhci/cli autorun` (mobile) on `/` and one
       case study; reach ≥95 in all four categories; record scores in `docs/QUALITY.md`. Commit: `perf: reach lighthouse 95+ on mobile`
-- [ ] **P5-06 README** — what/why, setup (<10 min), scripts, architecture overview, editing content, theme system,
+- [x] **P5-06 README** — what/why, setup (<10 min), scripts, architecture overview, editing content, theme system,
       contact endpoint, deploy. Commit: `docs: write project readme`
-- [ ] **P5-07 Content checklist** — final `CONTENT_CHECKLIST.md` from `pnpm content:check`, grouped by file.
+- [x] **P5-07 Content checklist** — final `CONTENT_CHECKLIST.md` from `pnpm content:check`, grouped by file.
       Commit: `docs(content): finalize content checklist`
 
 ---

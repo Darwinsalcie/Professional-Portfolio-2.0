@@ -1,7 +1,7 @@
 # CONTENT_CHECKLIST.md — Content review checklist
 
 List of all pending content placeholders that need verification and owner real data before production release.
-Generated automatically via `pnpm content:check`.
+Audited and finalized for Phase 5 release via `pnpm content:check`.
 
 ### `src/content/about.ts`
 
@@ -9,9 +9,9 @@ Generated automatically via `pnpm content:check`.
 - [ ] Line 6: About section eyebrow
 - [ ] Line 10: Owner bio narrative paragraph 1
 - [ ] Line 12: Owner bio narrative paragraph 2
-- [ ] Line 34: About section eyebrow
-- [ ] Line 38: Owner bio narrative paragraph 1
-- [ ] Line 40: Owner bio narrative paragraph 2
+- [ ] Line 37: About section eyebrow
+- [ ] Line 41: Owner bio narrative paragraph 1
+- [ ] Line 43: Owner bio narrative paragraph 2
 
 ### `src/content/contact.ts`
 

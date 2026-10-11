@@ -1,22 +1,35 @@
-import { Container } from '@/components/Container'
-import { Section } from '@/components/Section'
+import { Hero } from '@/features/hero/Hero'
+import { ProjectsSection } from '@/features/projects/ProjectsSection'
+import { ServicesSection } from '@/features/services/ServicesSection'
+import { StackSection } from '@/features/stack/StackSection'
+import { AboutSection } from '@/features/about/AboutSection'
+import { ContactSection } from '@/features/contact/ContactSection'
 import { useLocale } from '@/features/i18n/useLocale'
+import { useContent } from '@/features/i18n/useContent'
 
+import { Seo } from '@/components/Seo'
+
+/**
+ * Main localized home page route component.
+ * Composes Hero (#top), Projects (#work), Services (#services),
+ * Stack Ledger (#stack), About (#about), and Contact (#contact).
+ */
 export function HomePage() {
   const { locale } = useLocale()
+  const content = useContent()
+
+  const seoTitle = `${content.meta.name} — ${content.meta.role}`
+  const seoDesc = content.hero.lede
 
   return (
-    <Container className="py-12">
-      <Section id="work" ariaLabelledby="work-heading">
-        <h1 id="work-heading" className="text-headline-xl text-fg font-semibold">
-          {locale === 'es' ? 'Desarrollador Full-Stack' : 'Full-Stack Developer'}
-        </h1>
-        <p className="text-body-lg text-muted mt-4 max-w-2xl">
-          {locale === 'es'
-            ? 'Arquitecturas limpias y aplicaciones web modernas construidas con React y .NET.'
-            : 'Clean architectures and modern web applications built with React and .NET.'}
-        </p>
-      </Section>
-    </Container>
+    <div className="flex flex-col">
+      <Seo title={seoTitle} description={seoDesc} locale={locale} siteUrl={content.meta.url} />
+      <Hero content={content.hero} locale={locale} />
+      <ProjectsSection projects={content.projects} ui={content.ui} locale={locale} />
+      <ServicesSection services={content.services} ui={content.ui} locale={locale} />
+      <StackSection stack={content.stack} ui={content.ui} />
+      <AboutSection about={content.about} meta={content.meta} />
+      <ContactSection contact={content.contact} />
+    </div>
   )
 }

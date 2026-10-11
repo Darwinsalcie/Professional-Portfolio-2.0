@@ -18,7 +18,7 @@ describe('Theme tokens and WCAG AA contrast', () => {
     expect(cssContent).toContain('--fg-muted: #45464f;')
   })
 
-  const themes: ThemeName[] = ['glass', 'dark', 'light']
+  const themes: ThemeName[] = ['dark', 'light']
 
   themes.forEach((theme) => {
     describe(`${theme} palette contrast`, () => {
