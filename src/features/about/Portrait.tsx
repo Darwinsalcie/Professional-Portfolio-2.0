@@ -31,6 +31,10 @@ export function Portrait({
         <img
           src={src}
           alt={alt}
+          width={340}
+          height={340}
+          loading="lazy"
+          decoding="async"
           className="rounded-card h-full w-full object-cover brightness-95 contrast-125 grayscale"
         />
       ) : (

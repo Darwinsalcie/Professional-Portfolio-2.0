@@ -25,7 +25,15 @@ export const Avatar = React.forwardRef<HTMLDivElement, AvatarProps>(
         {...props}
       >
         {src ? (
-          <img src={src} alt={alt} className="h-full w-full object-cover" />
+          <img
+            src={src}
+            alt={alt}
+            width={size}
+            height={size}
+            loading="lazy"
+            decoding="async"
+            className="h-full w-full object-cover"
+          />
         ) : (
           <Monogram initials={initials} size={size} className="h-full w-full" />
         )}
