@@ -134,7 +134,7 @@ a render + axe test. Browser screenshot check at the end of each section task.
       focus return, closes on link click, ThemeSwitcher inside. Tests for open/close/focus. Commit: `feat(layout): add accessible mobile menu`
 - [x] **P3-04 Hero + TopologyDiagram** — single `h1`, eyebrow, lede, 2 CTAs; SVG diagram themed via CSS vars,
       `role="img"` + title/desc, fixed aspect ratio. Commit: `feat(hero): add hero with system topology diagram`
-- [ ] **P3-05 Featured projects** — `ProjectsSection` (`#work`) + `ProjectCard` linking `/work/:slug`, 3-col xl /
+- [x] **P3-05 Featured projects** — `ProjectsSection` (`#work`) + `ProjectCard` linking `/work/:slug`, 3-col xl /
       2-col md / 1-col mobile. Commit: `feat(projects): add featured project cards`
 - [ ] **P3-06 Services** — landing pages, web applications, full-stack/.NET; lucide icon map; benefit lists; CTA.
       Commit: `feat(services): add services section`

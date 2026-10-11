@@ -12,6 +12,10 @@ export const uiContent: Localized<UiLabels> = {
     hireMe: 'Contrátame',
     menuOpenAria: 'Abrir menú de navegación',
     closeMenuAria: 'Cerrar menú',
+    viewCaseStudy: 'Ver caso de estudio',
+    projectsEyebrow: 'Casos de Producción',
+    projectsTitle: 'Proyectos Destacados',
+    projectsLede: 'Soluciones técnicas diseñadas para alta escala y confiabilidad operativa.',
   },
   en: {
     themeSwitcherAria: 'Select color theme',
@@ -24,5 +28,10 @@ export const uiContent: Localized<UiLabels> = {
     hireMe: 'Hire me',
     menuOpenAria: 'Open navigation menu',
     closeMenuAria: 'Close menu',
+    viewCaseStudy: 'View Case Study',
+    projectsEyebrow: 'Production Showcase',
+    projectsTitle: 'Featured Projects',
+    projectsLede:
+      'Engineered architectures built for scale thresholds and mission-critical workflows.',
   },
 }

@@ -132,6 +132,10 @@ export interface UiLabels {
   hireMe: string
   menuOpenAria: string
   closeMenuAria: string
+  viewCaseStudy: string
+  projectsEyebrow: string
+  projectsTitle: string
+  projectsLede: string
 }
 
 export interface SiteContent {
