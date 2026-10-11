@@ -130,6 +130,8 @@ export interface UiLabels {
   returnHome: string
   headerNavAria: string
   hireMe: string
+  menuOpenAria: string
+  closeMenuAria: string
 }
 
 export interface SiteContent {

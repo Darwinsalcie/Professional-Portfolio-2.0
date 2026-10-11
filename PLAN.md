@@ -130,7 +130,7 @@ a render + axe test. Browser screenshot check at the end of each section task.
 - [x] **P3-02 Header (desktop)** — sticky translucent header, monogram + name/role, `DesktopNav` (section anchors,
       `useActiveSection` → `aria-current`), ThemeSwitcher, LanguageSwitcher, Avatar, "Hire me" → `#contact`.
       Commit: `feat(layout): add site header with theme and language switchers`
-- [ ] **P3-03 Mobile nav** — shadcn `sheet` (Radix Dialog): trigger with `aria-expanded`/label, focus trap, Esc,
+- [x] **P3-03 Mobile nav** — shadcn `sheet` (Radix Dialog): trigger with `aria-expanded`/label, focus trap, Esc,
       focus return, closes on link click, ThemeSwitcher inside. Tests for open/close/focus. Commit: `feat(layout): add accessible mobile menu`
 - [ ] **P3-04 Hero + TopologyDiagram** — single `h1`, eyebrow, lede, 2 CTAs; SVG diagram themed via CSS vars,
       `role="img"` + title/desc, fixed aspect ratio. Commit: `feat(hero): add hero with system topology diagram`

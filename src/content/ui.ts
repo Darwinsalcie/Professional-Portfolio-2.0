@@ -10,6 +10,8 @@ export const uiContent: Localized<UiLabels> = {
     returnHome: 'Volver al inicio',
     headerNavAria: 'Navegación principal',
     hireMe: 'Contrátame',
+    menuOpenAria: 'Abrir menú de navegación',
+    closeMenuAria: 'Cerrar menú',
   },
   en: {
     themeSwitcherAria: 'Select color theme',
@@ -20,5 +22,7 @@ export const uiContent: Localized<UiLabels> = {
     returnHome: 'Return to home',
     headerNavAria: 'Main navigation',
     hireMe: 'Hire me',
+    menuOpenAria: 'Open navigation menu',
+    closeMenuAria: 'Close menu',
   },
 }
