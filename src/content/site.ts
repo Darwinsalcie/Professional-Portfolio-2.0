@@ -4,9 +4,9 @@ import type { Localized, SiteMeta } from '@/types/content'
 export const siteContent: Localized<SiteMeta> = {
   es: {
     // TODO(content): Owner name
-    name: 'Darwin Developer',
+    name: 'Darwin Salcie',
     // TODO(content): Owner professional title
-    role: 'Desarrollador Full-Stack (React + .NET)',
+    role: 'Software Engineer',
     // TODO(content): Production site URL
     url: 'https://example.com',
     // TODO(content): Verified contact email
@@ -28,9 +28,9 @@ export const siteContent: Localized<SiteMeta> = {
   },
   en: {
     // TODO(content): Owner name
-    name: 'Darwin Developer',
+    name: 'Darwin Salcie',
     // TODO(content): Owner professional title
-    role: 'Full-Stack Developer (React + .NET)',
+    role: 'Software Engineer',
     // TODO(content): Production site URL
     url: 'https://example.com',
     // TODO(content): Verified contact email

@@ -94,6 +94,19 @@ export interface AboutContent {
   eyebrow: string
   heading: string
   narrative: string[]
+  experienceNotice?: {
+    role: string
+    organization: string
+    period: string
+  }
+  educationNotice?: {
+    status: string
+    progress: string
+  }
+  resumeCta?: {
+    label: string
+    href: string
+  }
   principles: AboutPrinciple[]
 }
 

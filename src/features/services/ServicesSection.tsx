@@ -16,7 +16,7 @@ export interface ServicesSectionProps {
  */
 export function ServicesSection({ services, ui, locale }: ServicesSectionProps) {
   return (
-    <Section id="services" ariaLabelledby="services-heading" className="py-12 md:py-20">
+    <Section id="services" ariaLabelledby="services-heading" className="py-8 md:py-12">
       <Container className="flex flex-col gap-10">
         <Reveal>
           <SectionHeader

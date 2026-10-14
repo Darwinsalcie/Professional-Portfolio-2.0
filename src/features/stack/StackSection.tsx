@@ -15,7 +15,7 @@ export interface StackSectionProps {
  */
 export function StackSection({ stack, ui }: StackSectionProps) {
   return (
-    <Section id="stack" ariaLabelledby="stack-heading" className="py-12 md:py-20">
+    <Section id="stack" ariaLabelledby="stack-heading" className="py-8 md:py-12">
       <Container className="flex flex-col gap-10">
         <Reveal>
           <SectionHeader

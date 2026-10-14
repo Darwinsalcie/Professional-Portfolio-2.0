@@ -16,7 +16,7 @@ export interface ProjectsSectionProps {
  */
 export function ProjectsSection({ projects, ui, locale }: ProjectsSectionProps) {
   return (
-    <Section id="work" ariaLabelledby="work-heading" className="py-12 md:py-20">
+    <Section id="work" ariaLabelledby="work-heading" className="py-8 md:py-12">
       <Container className="flex flex-col gap-10">
         <Reveal>
           <SectionHeader

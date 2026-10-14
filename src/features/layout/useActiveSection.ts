@@ -4,45 +4,45 @@ import { useEffect, useState } from 'react'
  * Tracks the currently active section in the viewport using IntersectionObserver.
  */
 export function useActiveSection(sectionIds: string[]): string {
-  const [activeId, setActiveId] = useState<string>(sectionIds[0] ?? '')
+  const [activeId, setActiveId] = useState<string>('')
 
   useEffect(() => {
-    if (typeof window === 'undefined' || !('IntersectionObserver' in window)) {
-      return
-    }
+    if (typeof window === 'undefined') return
 
-    const elements = sectionIds
-      .map((id) => document.getElementById(id))
-      .filter((el): el is HTMLElement => el !== null)
+    const handleScroll = () => {
+      const scrollPosition = window.scrollY + 140 // Offset for sticky header and comfort zone
 
-    if (elements.length === 0) return
+      // If at very bottom of document, activate the last section (typically contact)
+      if (window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 50) {
+        const lastId = sectionIds[sectionIds.length - 1]
+        if (lastId) {
+          setActiveId(lastId)
+          return
+        }
+      }
 
-    const observer = new IntersectionObserver(
-      (entries) => {
-        const visibleEntries = entries.filter((entry) => entry.isIntersecting)
-        if (visibleEntries.length > 0) {
-          // Sort by top offset to pick the foremost active section
-          const sorted = visibleEntries.sort(
-            (a, b) => Math.abs(a.boundingClientRect.top) - Math.abs(b.boundingClientRect.top),
-          )
-          const primary = sorted[0]
-          if (primary) {
-            setActiveId(primary.target.id)
+      // Check each section position
+      let current = ''
+      for (const id of sectionIds) {
+        const el = document.getElementById(id)
+        if (el) {
+          const top = el.offsetTop
+          if (scrollPosition >= top) {
+            current = id
           }
         }
-      },
-      {
-        rootMargin: '-20% 0% -60% 0%',
-        threshold: [0, 0.25, 0.5, 0.75, 1],
-      },
-    )
+      }
 
-    elements.forEach((el) => {
-      observer.observe(el)
-    })
+      setActiveId(current)
+    }
+
+    handleScroll()
+    window.addEventListener('scroll', handleScroll, { passive: true })
+    window.addEventListener('resize', handleScroll, { passive: true })
 
     return () => {
-      observer.disconnect()
+      window.removeEventListener('scroll', handleScroll)
+      window.removeEventListener('resize', handleScroll)
     }
   }, [sectionIds])
 

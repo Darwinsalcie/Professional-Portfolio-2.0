@@ -19,7 +19,7 @@ export function Hero({ content, locale }: HeroProps) {
   return (
     <section
       aria-labelledby="hero-title"
-      className="relative w-full overflow-hidden pt-12 pb-16 md:pt-16 md:pb-24"
+      className="relative w-full overflow-hidden pt-6 pb-12 md:pt-8 md:pb-16"
     >
       <Container>
         <div className="grid grid-cols-1 items-center gap-8 lg:grid-cols-12 lg:gap-12">

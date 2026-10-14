@@ -18,7 +18,7 @@ export interface ContactSectionProps {
  */
 export function ContactSection({ contact }: ContactSectionProps) {
   return (
-    <Section id="contact" ariaLabelledby="contact-heading" className="py-12 md:py-20">
+    <Section id="contact" ariaLabelledby="contact-heading" className="py-8 md:py-12">
       <Container>
         <Reveal>
           <Card as="div" variant="panel" className="p-8 sm:p-12 md:p-16">
